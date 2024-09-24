@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+#tasks {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#tasks .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+}
+
+#tasks .list-group-item a {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+#tasks .list-group-item a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 10px;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    #task_form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #task_form input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #task_form input[type="submit"] {
+        width: 100%;
+    }
+
+    #clear_task_btn {
+        width: 100%;
+    }
+}
